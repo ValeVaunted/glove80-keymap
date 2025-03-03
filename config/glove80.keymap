@@ -52,7 +52,7 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
         };
     };
 
@@ -100,16 +100,6 @@
             bindings = <&kp ESCAPE>;
             key-positions = <69 74>;
         };
-
-        HyperkeyL {
-            bindings = <&sk LC(LG(LA(LEFT_SHIFT)))>;
-            key-positions = <66>;
-        };
-
-        HyperkeyR {
-            bindings = <&sk LC(LG(LA(LEFT_SHIFT)))>;
-            key-positions = <77>;
-        };
     };
 
     keymap {
@@ -125,12 +115,12 @@
             // | MAGIC | HOME| END | LEFT | RIGHT|      | BSPC  | DEL   | LALT  | | RALT  | RET   | SPACE |      |  UP   | DOWN  |  [   |   ]   | PGDN |
 
             bindings = <
-&kp F1      &kp F2               &kp F3           &kp F4               &kp F5                                                                                                 &kp F6              &kp F7                &kp F8            &kp F9                 &kp F10
-&kp EQUAL   &kp N1               &kp N2           &kp N3               &kp N4             &kp N5                                                                      &kp N6  &kp N7              &kp N8                &kp N9            &kp N0                 &kp MINUS
-&kp TAB     &kp Q                &kp W            &kp F                &kp P              &kp B                                                                       &kp J   &kp L               &kp U                 &kp Y             &mt EXCLAMATION MINUS  &kp BSLH
-&kp ESC     &hrm LEFT_CONTROL A  &hrm LEFT_ALT R  &hrm LEFT_COMMAND S  &hrm LEFT_SHIFT T  &kp G                                                                       &kp M   &hrm RIGHT_SHIFT N  &hrm RIGHT_COMMAND E  &hrm RIGHT_ALT I  &hrm RIGHT_CONTROL O   &kp SQT
-&kp GRAVE   &kp Z                &kp X            &kp C                &kp D              &kp V   &lt 1 TAB  &none    &layer_td  &kp LGUI  &kp RCTRL   &kp ENTER      &kp K   &kp H               &kp COMMA             &kp DOT           &kp GRAVE              &kp PG_UP
-&magic 2 0  &kp HOME             &none            &kp LEFT             &kp RIGHT                  &kp SPACE  &kp DEL  &kp LALT   &kp RALT  &kp DELETE  &kp BACKSPACE          &kp UP              &kp DOWN              &none             &kp RBKT               &kp PG_DN
+&kp F1      &kp F2               &kp F3                      &kp F4               &kp F5                                                                                                 &kp F6              &kp F7                &kp F8                      &kp F9                 &kp F10
+&kp EQUAL   &kp N1               &kp N2                      &kp N3               &kp N4             &kp N5                                                                      &kp N6  &kp N7              &kp N8                &kp N9                      &kp N0                 &kp MINUS
+&kp TAB     &kp Q                &kp W                       &kp F                &kp P              &kp B                                                                       &kp J   &kp L               &kp U                 &kp Y                       &mt EXCLAMATION MINUS  &kp BSLH
+&kp ESC     &hrm LEFT_CONTROL A  &hrm LEFT_ALT R             &hrm LEFT_COMMAND S  &hrm LEFT_SHIFT T  &kp G                                                                       &kp M   &hrm RIGHT_SHIFT N  &hrm RIGHT_COMMAND E  &hrm RIGHT_ALT I            &hrm RIGHT_CONTROL O   &kp SQT
+&kp GRAVE   &kp Z                &kp X                       &kp C                &kp D              &kp V   &lt 1 TAB  &none    &layer_td  &kp LGUI  &kp RCTRL   &kp ENTER      &kp K   &kp H               &kp COMMA             &kp DOT                     &kp GRAVE              &kp PG_UP
+&magic 2 0  &kp HOME             &kp LA(LC(LG(LEFT_SHIFT)))  &kp LEFT             &kp RIGHT                  &kp SPACE  &kp DEL  &kp LALT   &kp RALT  &kp DELETE  &kp BACKSPACE          &kp UP              &kp DOWN              &kp LA(LC(LG(LEFT_SHIFT)))  &kp RBKT               &kp PG_DN
             >;
         };
 
