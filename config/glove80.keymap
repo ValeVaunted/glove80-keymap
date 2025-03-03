@@ -120,7 +120,7 @@
 &kp TAB     &kp Q                &kp W                       &kp F                &kp P              &kp B                                                                       &kp J   &kp L               &kp U                 &kp Y                       &mt EXCLAMATION MINUS  &kp BSLH
 &kp ESC     &hrm LEFT_CONTROL A  &hrm LEFT_ALT R             &hrm LEFT_COMMAND S  &hrm LEFT_SHIFT T  &kp G                                                                       &kp M   &hrm RIGHT_SHIFT N  &hrm RIGHT_COMMAND E  &hrm RIGHT_ALT I            &hrm RIGHT_CONTROL O   &kp SQT
 &kp GRAVE   &kp Z                &kp X                       &kp C                &kp D              &kp V   &lt 1 TAB  &none    &layer_td  &kp LGUI  &kp RCTRL   &kp ENTER      &kp K   &kp H               &kp COMMA             &kp DOT                     &kp GRAVE              &kp PG_UP
-&magic 2 0  &kp HOME             &kp LA(LC(LG(LEFT_SHIFT)))  &kp LEFT             &kp RIGHT                  &kp SPACE  &kp DEL  &kp LALT   &kp RALT  &kp DELETE  &kp BACKSPACE          &kp UP              &kp DOWN              &kp LA(LC(LG(LEFT_SHIFT)))  &kp RBKT               &kp PG_DN
+&magic 2 0  &kp HOME             &sk LA(LC(LG(LEFT_SHIFT)))  &kp LEFT             &kp RIGHT                  &kp SPACE  &kp DEL  &kp LALT   &kp RALT  &kp DELETE  &kp BACKSPACE          &kp UP              &kp DOWN              &sk LA(LC(LG(LEFT_SHIFT)))  &kp RBKT               &kp PG_DN
             >;
         };
 
